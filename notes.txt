@@ -1,0 +1,99 @@
+------------NodeJS---------------------------
+
+# Express = Framework web para NodeJS.
+
+# EJS = Renderiza templates.
+
+# Nodemon = starta novamente o server do node automaticamte após qualquer alteração.
+
+# Consign = Faz um autoload de nossas rotas e arquivos de redirecionamento
+
+------------Node/Módulos comandos-------------
+
+# NPM = Gerenciador de pacotes. Atravé dele podemos
+baixar os itens acima por exemplo.
+
+# NPM init => Comando no qual inicia a criação de nosso packkage.json.
+
+# NPM install (alguma depedencia) -save = O save no final é para facilitar outras pessoas baixar o projeto com todas as depedências.
+
+# NPM install express --save = Instala o Express .
+
+# NPM install ejs --save = Instala o ejs.
+
+# NPM Install -g nodemon = Instala o nodemon. -g no comando de instalação indica que ao invés de instalarmos o pacote particularmente em um projeto, estamos instalando na máquina, ou seja vai ficar disponível para ser usado via linha de comando, como é o caso do React Native CLI.
+
+# Nodemon (nome do arquivo a ser rodado) = Comando na linha de comando. Roda o servidor
+
+# Módulos = Módulos no NodeJS são códigos separados para determinada função. Como as classes em OOP.
+
+# CommonJS = É um formato que define o formato na construção de módulos. Para que os módulos sejam incluido de forma mais natural.
+
+# npm install mysql --save = Instala o MySql como módulo do nosso projeto
+
+--------EJS-----------------
+
+<% %> = Abre a tag para inserção de código javascript no arquivo EJS
+
+<%= %> = Quando queremos imprimir uma variável ou algo em nosso HTML
+
+<%- -%> = Inserir outros comandos fora da curva de inserção de variáveis, como fazer includes
+
+<# %> = Fazer comentários
+
+
+----------MySQL---------------
+
+# mysql -u (database user) -p = Comando que dentro do diretório MySQL da sua máquina pode manipular dabatases em MySQL
+
+# create dabatase (nome do banco) = Cria um banco de dados
+
+# show dabatases = mostra os bancos criados
+
+# use (nome do banco) = entra no banco solicitado para manipular ele 
+
+# show tables = Mostra as tabelas criadas 
+
+# (nome da coluna de uma tabela) timestamp default current_timestamp = Gera um data automaticamente quando um novo dado for inserido
+
+
+-------------Git---------------------
+
+# git config = Configurações iniciais do git
+
+# git config --global user.email (or name) = Configurações de nome e email
+
+# git add (algum file) = adiciona na sala de espera
+
+# git commit -m "algo" = comita 
+
+# git push origin master = push master
+
+# git pull origin master = pull master 
+
+# git status = verifica o status de nossos arquivos no git
+
+# git log = log de todos commits já feitos (todas nossas versões)
+
+# git rebase -i --root = Entrar em um arquivo do tipo vim no qual podemos alterar alguns logs
+
+# https://stackedit.io = Site com templates de criação de Readme.módulo
+
+# .gitnore = arquivo onde colocamos os arquivos que não queremos subir para nosso repositório
+
+# git tag = Permite colocarmos tags, ou mais especificamente nome para cada versão. Exemplo: v1.0, v2.0, v3.0 etc
+
+# git tag -a v4.0 -m "nome da versao" = Diz o nome da versão do brancher master
+
+# git log --pretty=oneline = Entra nossas versões e seus IDs 
+
+# git branch = lista nossos branch
+
+# git branch (nome do branch) = Cria um novo branch 
+
+# git merge (nome do branch) = adiciona os arquivos de um branch ao branch atual no git 
+
+# git branch -d (nome do branch) = exclui um branch
+
+
+

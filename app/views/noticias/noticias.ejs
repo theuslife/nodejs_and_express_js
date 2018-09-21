@@ -1,0 +1,29 @@
+<%- include('../layout/header') -%>
+
+<div class='container'>
+	<div class ='row-12'>
+		<h1>Notícias</h1>
+		<table class='table table-bordered'>
+			<tr>
+				<th>Id</th>
+				<th>Titulo</th>
+				<th>Conteudo</th>
+				<th>Timestamp</th>
+			</tr>
+
+			<%# As tags de abertura EJS possuem diferença, Isto aqui é um comentário por exemplo %>
+
+			<% list.forEach((element) => { %>
+			<tr>
+				<td><%= element.id_noticia %></td>
+				<td><%= element.titulo %></td>
+				<td><%= element.noticia %></td>
+				<td><%= element.data_criacao %></td>
+			</tr>
+			<% }) %>
+
+		</table>
+	</div>
+</div>
+
+<%- include('../layout/footer') -%>

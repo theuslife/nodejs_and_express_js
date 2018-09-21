@@ -1,0 +1,17 @@
+{
+  "name": "portal_noticias",
+  "version": "1.0.0",
+  "description": "site_de_noticias",
+  "main": "server_request_and_response.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "matheus",
+  "license": "ISC",
+  "dependencies": {
+    "consign": "^0.1.6",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "mysql": "^2.16.0"
+  }
+}
