@@ -1,0 +1,25 @@
+<%- include('../layout/header') -%>
+
+<div class='container'>
+	<div class ='row-12'>
+		<h1>Notícia</h1>
+		<table class='table table-bordered'>
+			<tr>
+				<th>Id</th>
+				<th>Titulo</th>
+				<th>Conteudo</th>
+				<th>Timestamp</th>
+			</tr>
+
+			<tr>
+				<td><%= news[0].id_noticia %></td>
+				<td><%= news[0].titulo %></td>
+				<td><%= news[0].noticia %></td>
+				<td><%= news[0].data_criacao %></td>
+			</tr>
+
+		</table>
+	</div>
+</div>
+
+<%- include('../layout/footer') -%>

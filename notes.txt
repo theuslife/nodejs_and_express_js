@@ -21,6 +21,8 @@ baixar os itens acima por exemplo.
 
 # NPM install ejs --save = Instala o ejs.
 
+# NPM install body-parser --save = Instala o Body-parser no qual é necessário para receber requisições via protocolos HTTP com segurança
+
 # NPM Install -g nodemon = Instala o nodemon. -g no comando de instalação indica que ao invés de instalarmos o pacote particularmente em um projeto, estamos instalando na máquina, ou seja vai ficar disponível para ser usado via linha de comando, como é o caso do React Native CLI.
 
 # Nodemon (nome do arquivo a ser rodado) = Comando na linha de comando. Roda o servidor

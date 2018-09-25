@@ -4,7 +4,7 @@
 */
 
 /* --- Config require --- */
-let app = require('./config/server')();
+let app = require(__dirname + '/config/server')();
 
 //Exemplo de módulo. Estamos automaticamente chamando a função de nosso módulo criado
 let msg = require('./modulo_teste')();

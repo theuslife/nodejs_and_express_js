@@ -1,0 +1,21 @@
+<%- include('../layout/header.ejs') -%>
+
+<div class="container">
+	<div class="col-12">
+		<h1 class="h1 mt-5">Adicionar notícia</h1>
+		<form action="/noticias/update" method="post">
+			<div class="form-group">
+				<label for="news">Título da Noticia</label>
+				<input type="text" class="form-control" id="news" name="titulo">
+			</div>
+			<div class="form-group">
+				<label for="content">Conteúdo da Notícia</label>
+				<textarea class="form-control" id="content" rows="6" name="noticia"></textarea>
+			</div>
+			<button type="submit" class="btn btn-primary">Adicionar notícia</button>
+		</form>		
+	</div>
+</div>
+
+<%- include('../layout/footer.ejs') -%>
+
