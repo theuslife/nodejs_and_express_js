@@ -3,14 +3,42 @@
 <div class="container">
 	<div class="col-12">
 		<h1 class="h1 mt-5">Adicionar notícia</h1>
+
+		<% if(validate) { %>
+
+			<div class="alert alert-danger">
+			<% for(i = 0; i < validate.length; i++){ %> 
+
+				<% if(validate[i].msg != undefined) { %>
+					<%= validate[i].msg %>
+					<% break; %>
+				<% } %>   
+
+			<% } %> 
+			</div>
+
+		<% } %>
+
 		<form action="/noticias/update" method="post">
 			<div class="form-group">
 				<label for="news">Título da Noticia</label>
-				<input type="text" class="form-control" id="news" name="titulo">
+				<input type="text" class="form-control" id="news" name="titulo" value="<%=input.titulo%>">
+			</div>
+			<div class="form-group">
+				<label for="autor">Autor</label>
+				<input type="text" class="form-control" id="autor" name="autor" value="<%=input.autor%>">
+			</div>
+			<div class="form-group">
+				<label for="data">Data da notícia</label>
+				<input type="date" class="form-control" id="data" name="data_noticia" value="<%=input.data_noticia%>">
+			</div>
+			<div class="form-group">
+				<label for="content">Resumo</label>
+				<textarea class="form-control" id="content" rows="2" name="resumo" value="<%=input.resumo%>"></textarea>
 			</div>
 			<div class="form-group">
 				<label for="content">Conteúdo da Notícia</label>
-				<textarea class="form-control" id="content" rows="6" name="noticia"></textarea>
+				<textarea class="form-control" id="content" rows="6" name="noticia"><%=input.noticia%></textarea>
 			</div>
 			<button type="submit" class="btn btn-primary">Adicionar notícia</button>
 		</form>		

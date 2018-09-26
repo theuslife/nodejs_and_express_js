@@ -1,16 +1,11 @@
-module.exports = (app) => {
+module.exports = (application) => {
 
-    app.get('/noticias', (req, res) => {
-        
-        //Ativando o database
-        let mysql = app.config.dbConnection();
-        let noticiasModels = new app.app.models.noticiasModels(mysql);
+    application.get('/noticias', (req, res) => {
+        application.app.controllers.noticiasController.noticias(application, req, res);  
+    })
 
-        //Vamos chamar um método dentro da nossa função do modulo noticiasModels
-        noticiasModels.getNoticias((error, result) => {
-            res.render('noticias/noticiasView', {news: result});
-        });
-        
+    application.get('/noticia', (req, res) => {
+        application.app.controllers.noticiasController.noticia(application, req, res);    
     })
 
 };

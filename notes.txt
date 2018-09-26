@@ -1,4 +1,4 @@
-------------NodeJS---------------------------
+------------NodeJS and Frameworks---------------------------
 
 # Express = Framework web para NodeJS.
 
@@ -7,6 +7,12 @@
 # Nodemon = starta novamente o server do node automaticamte após qualquer alteração.
 
 # Consign = Faz um autoload de nossas rotas e arquivos de redirecionamento
+
+# Body Parser = Body-parser no qual é necessário para receber requisições via protocolos HTTP com segurança
+
+# Express-validator = Valida dados. Ele é um middleware, portanto ele vai fazer a tratativa.
+
+# Moment JS = Valida data/hora
 
 ------------Node/Módulos comandos-------------
 
@@ -32,6 +38,8 @@ baixar os itens acima por exemplo.
 # CommonJS = É um formato que define o formato na construção de módulos. Para que os módulos sejam incluido de forma mais natural.
 
 # npm install mysql --save = Instala o MySql como módulo do nosso projeto
+
+# npm install express-validador --save = Instala express-validator
 
 --------EJS-----------------
 
